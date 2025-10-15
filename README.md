@@ -1,27 +1,98 @@
-# BMI_Pair_Project
-BME Health Calculator Suite
+# 🏥 BME Health Calculator Suite
 
-This project is a simple but practical health tracking app. It brings together three tools most people use separately — a BMI calculator, a metabolic rate estimator, and a food log — and puts them into one place with a clean, tabbed interface.
+This project is a comprehensive and practical health tracking application built entirely with Python and Gradio. It integrates three essential health management tools—a BMI calculator, a metabolic rate estimator, and a food log—into a single, clean, and interactive tabbed interface.# 🏥 BME Health Calculator Suite
 
-How it’s set up
+This project is a comprehensive and practical health tracking application built entirely with Python and Gradio. It integrates three essential health management tools—a BMI calculator, a metabolic rate estimator, and a food log—into a single, clean, and interactive tabbed interface.
 
-The app runs in a browser using Gradio, so users don’t need to install anything complicated.
-The layout is split into three tabs: one for BMI, one for metabolic rate (BMR/TDEE), and one for food tracking.
-A styled header and some custom CSS give it a polished look, so it feels more like a finished product than a rough script.
+---
 
-What each part does
+## 📝 Table of Contents
+- [🚀 Getting Started](#-getting-started)
+- [⬇️ Installation](#-installation)
+- [▶️ Usage](#-usage-how-to-run-the-app)
+- [✨ Features Overview](#-features-overview)
+- [🛠️ Technical Overview](#-technical-overview)
+- [🧑‍💻 Developers & License](#-developers--license)
 
-BMI Calculator Users enter their height and weight (metric or imperial). The app calculates BMI, shows which category they fall into (underweight, normal, overweight, obesity), and even plots how their BMI changes over time.
-Metabolic Rate (BMR/TDEE) With age, gender, height, weight, and activity level, the app estimates how many calories the body burns at rest (BMR) and in a day (TDEE). It also suggests calorie targets for maintaining, losing, or gaining weight.
-Food & Calorie Tracker Users can log meals either by picking from a list of common foods or typing in their own. The app totals up the day’s calories, compares it to the TDEE target, and shows a 7‑day chart of intake.
+---
 
-How it works behind the scenes
+## 🚀 Getting Started
 
-Pandas keeps track of the data (BMI history, food logs).
-Plotly makes the charts interactive and easy to read.
-Gradio’s event system connects the buttons and inputs to the functions that do the calculations, so everything updates live when the user interacts.
+Follow these steps to clone the repository and run the application locally.
 
-Why it’s useful
+### Prerequisites
 
-Instead of juggling different calculators or apps, this suite gives a quick, all‑in‑one view of health metrics. It’s lightweight, easy to use, and good for anyone who wants to keep an eye on their health without getting lost in overly complex fitness apps.
-Akkara Lamaimas 6813400, Nanticha Supmool 6813375 | EGBI
+You need Python 3.x installed on your system.
+
+---
+
+## ⬇️ Installation
+
+**Clone the Repository:**
+```bash
+git clone [YOUR_GITHUB_REPO_LINK]
+cd BMI_Pair_Project # Or your project's main folder name
+```
+
+**Install Dependencies:**  
+Install all required Python packages:
+```bash
+pip install gradio pandas plotly
+```
+
+---
+
+## ▶️ Usage (How to Run the App)
+
+**Execute the Python File:**  
+Run the main script from your terminal:
+```bash
+python [YOUR_MAIN_PYTHON_FILE_NAME.py]
+```
+
+**Access the Interface:**  
+The application will automatically launch in your web browser. If not, open the URL provided in the terminal (typically http://127.0.0.1:7860).
+
+---
+
+## ✨ Features Overview
+
+The application is split into three main tabs for a seamless user experience:
+
+### 📊 BMI Calculator (Body Mass Index)
+- Supports both Metric (cm, kg) and Imperial (in, lbs) units.
+- Calculates BMI and provides a visual health category indicator (Underweight, Normal, Overweight, Obesity).
+- Displays a Plotly chart of BMI history over time.
+
+### 🔥 Metabolic Rate (BMR/TDEE)
+- Calculates BMR (Basal Metabolic Rate) and TDEE (Total Daily Energy Expenditure) using user input (age, gender, height, weight, activity level).
+- Provides suggested calorie targets for Weight Maintenance, Weight Loss, and Weight Gain.
+
+### 🥗 Food & Calorie Tracker
+- Allows logging of meals via a predefined dropdown of common foods or via manual input of food name and calories.
+- Totals the day’s calorie intake and compares it directly to the TDEE target (if calculated).
+- Shows a 7-day chart of calorie intake history for easy tracking.
+
+---
+
+## 🛠️ Technical Overview
+
+| Component | Role |
+|-----------|------|
+| **Gradio** | Frontend and interactive framework (UI, Tabs, Event System). |
+| **Pandas** | Data structure for state management (storing BMI history and food log). |
+| **Plotly** | Generates the responsive and interactive data visualizations (charts). |
+
+---
+
+## 🧑‍💻 Developers & License
+
+**Developers:**
+- Akkara Lamaimas | Student ID: 6813400
+- Nanticha Supmool | Student ID: 6813375
+
+Course: EGBI  
+Date: October 14, 2025
+
+**License:**  
+This project is for academic use.
